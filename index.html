@@ -73,7 +73,6 @@ function verifyKey() {
   } else {
     document.getElementById("status").textContent =
       "Key salah! Silakan coba lagi.";
-  }
 }
     }
 
@@ -82,15 +81,10 @@ function verifyKey() {
 
   if (key === "SUBSCRIBE_OCTNDIF") {
     document.getElementById("status").textContent =
-      "Key benar! Membuka script...";
-
-    window.open(
-      "https://gist.githubusercontent.com/OCTANDIF/890cdf24c2fb04144386bb719762c7fd/raw/5f89df19405967be16b753050daa039d55520293/SCRIPT%2520UNIVERSAL%2520V2",
-      "_blank"
-    );
+      "Key berhasil diverifikasi!";
   } else {
     document.getElementById("status").textContent =
-      "Key salah! Silakan coba lagi.";
+      "Key salah!";
   }
     }
   </script>
