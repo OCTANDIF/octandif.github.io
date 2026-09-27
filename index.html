@@ -59,10 +59,22 @@
   </div>
 
   <script>
-    function getKey() {
-      document.getElementById("key").value = "SUBSCRIBE_OCTANDIF";
-      document.getElementById("status").textContent =
-        "Key berhasil dibuat!";
+function verifyKey() {
+  const key = document.getElementById("key").value.trim();
+
+  if (key === "SUBSCRIBE_OCTNDIF") {
+    document.getElementById("status").textContent =
+      "Key benar! Membuka script...";
+
+    window.open(
+      "https://gist.githubusercontent.com/OCTANDIF/890cdf24c2fb04144386bb719762c7fd/raw/5f89df19405967be16b753050daa039d55520293/SCRIPT%2520UNIVERSAL%2520V2",
+      "_blank"
+    );
+  } else {
+    document.getElementById("status").textContent =
+      "Key salah! Silakan coba lagi.";
+  }
+}
     }
 
     function verifyKey() {
