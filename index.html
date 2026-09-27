@@ -60,7 +60,7 @@
 
   <script>
     function getKey() {
-      document.getElementById("key").value = "OCTANDIF2026";
+      document.getElementById("key").value = "SUBSCRIBE_OCTANDIF";
       document.getElementById("status").textContent =
         "Key berhasil dibuat!";
     }
@@ -68,7 +68,7 @@
     function verifyKey() {
       const key = document.getElementById("key").value;
       document.getElementById("status").textContent =
-        key === "OCTANDIF2026"
+        key === "SUBSCRIBE_OCTANDIF"
           ? "Key berhasil diverifikasi!"
           : "Key salah!";
     }
